@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <input type="text" onChange={e => setText(e.target.value)} value={text} />
-      <Counter onOdd={onOdd} />
+      <Counter onOdd={onOdd} data={{ hello: "world" }} />
     </div>
   );
 }
